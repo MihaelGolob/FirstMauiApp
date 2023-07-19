@@ -15,6 +15,42 @@
                     Name="Red-shanked douc"
                     ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg"
                     Location="Vietnam"/>
+                <model:Monkey 
+                    Name="Baboon"
+                    ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg"
+                    Location="Africa and Asia"/>
+                <model:Monkey
+                    Name="Red-shanked douc"
+                    ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg"
+                    Location="Vietnam"/>
+                <model:Monkey 
+                    Name="Baboon"
+                    ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg"
+                    Location="Africa and Asia"/>
+                <model:Monkey
+                    Name="Red-shanked douc"
+                    ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg"
+                    Location="Vietnam"/>
+                <model:Monkey
+                    Name="Golden Lion Tamarin"
+                    ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg"
+                    Location="Brazil"/>
+                <model:Monkey
+                    Name="Golden Lion Tamarin"
+                    ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg"
+                    Location="Brazil"/> 
+                <model:Monkey
+                    Name="Golden Lion Tamarin"
+                    ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg"
+                    Location="Brazil"/> 
+                <model:Monkey
+                    Name="Golden Lion Tamarin"
+                    ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg"
+                    Location="Brazil"/> 
+                <model:Monkey
+                    Name="Golden Lion Tamarin"
+                    ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg"
+                    Location="Brazil"/> 
                 <model:Monkey
                     Name="Golden Lion Tamarin"
                     ImageUrl="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg"
@@ -23,9 +59,9 @@
         </CollectionView.ItemsSource>
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Monkey">
-                <HorizontalStackLayout Padding="10">
+                <HorizontalStackLayout Padding="10" Spacing="20">
                     <Image Source="{Binding ImageUrl}" HeightRequest="100" WidthRequest="100" Aspect="AspectFill"/>
-                    <VerticalStackLayout Padding="10" Spacing="5" VerticalOptions="Center">
+                    <VerticalStackLayout Spacing="5" VerticalOptions="Center">
                         <Label Text="{Binding Name}" FontSize="25"/>
                         <Label Text="{Binding Location}" FontSize="15"/>
                     </VerticalStackLayout>
