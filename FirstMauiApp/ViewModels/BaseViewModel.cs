@@ -4,7 +4,6 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace FirstMauiApp.ViewModels; 
 
-[INotifyPropertyChanged]
 public partial class BaseViewModel : ObservableObject{
     
     public BaseViewModel() {
