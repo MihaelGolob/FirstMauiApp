@@ -1,5 +1,13 @@
-﻿namespace FirstMauiApp.ViewModels; 
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using FirstMauiApp.Models;
 
-public class MonkeyDetailsViewModel : BaseViewModel{
-    
+namespace FirstMauiApp.ViewModels; 
+
+[QueryProperty("Monkey", "Monkey")]
+public partial class MonkeyDetailsViewModel : BaseViewModel {
+    public MonkeyDetailsViewModel() {
+    }
+
+    [ObservableProperty]
+    private Monkey monkey;
 }

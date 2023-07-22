@@ -1,5 +1,6 @@
 ﻿using FirstMauiApp.Services;
 using FirstMauiApp.ViewModels;
+using FirstMauiApp.Views;
 using Microsoft.Extensions.Logging;
 
 namespace FirstMauiApp;
@@ -14,8 +15,12 @@ public static class MauiProgram {
             });
 
         builder.Services.AddSingleton<MonkeyService>();
+        
         builder.Services.AddSingleton<MonkeysViewModel>();
+        builder.Services.AddTransient<MonkeyDetailsViewModel>();
+        
         builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddTransient<DetailsPage>();
 
 #if DEBUG
         builder.Logging.AddDebug();
