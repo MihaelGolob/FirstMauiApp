@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Diagnostics;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using FirstMauiApp.Models;
 using FirstMauiApp.Services;
@@ -12,6 +13,9 @@ public partial class MonkeysViewModel : BaseViewModel {
     
     private readonly IConnectivity _connectivity;
     private readonly IGeolocation _geolocation;
+
+    [ObservableProperty] 
+    private bool _isRefreshing;
     
     // public properties
     public ObservableCollection<Monkey> Monkeys { get; } = new();
@@ -86,6 +90,7 @@ public partial class MonkeysViewModel : BaseViewModel {
         }
         finally {
             IsBusy = false;
+            IsRefreshing = false;
         }
     }
 }
