@@ -49,6 +49,14 @@
                 Margin="10"
                 Style="{StaticResource ButtonOutline}"/>
         
+        <Button Text="Find Closest Monkey" 
+                Command="{Binding GetClosestMonkeyCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                Grid.Row="1" 
+                Grid.Column="2"
+                Margin="10"
+                Style="{StaticResource ButtonOutline}"/>
+        
         <ActivityIndicator IsVisible="{Binding IsBusy}"
                            IsRunning="{Binding IsBusy}" 
                            HeightRequest="50"
